@@ -9,13 +9,13 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container" style="margin-top: 15px;">
         <div class="row">
             <div class="col-md-12">
                 <div class="card">
                     <div class="card-header">
                         Products list
-                        <div class="btn btn-success btn-sm float-end">New product</div>
+                        <a href="{{ route('products.create') }}" class="btn btn-success btn-sm float-end">New product</a>
                     </div>
                     <div class="card-body">
                         ...
