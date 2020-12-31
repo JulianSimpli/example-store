@@ -17,7 +17,8 @@
                         Create product
                     </div>
                     <div class="card-body">
-                        <form action="">
+                        <form action="{{ route('products.store') }}" method="POST">
+                            @csrf
                             <div class="form-group">
                                 <label for="">Description</label>
                                 <input type="text" class="form-control" name="description">
@@ -28,7 +29,7 @@
                             </div>
                             <div style="margin-top: 15px;">
                                 <button type="submit" class="btn btn-primary">Save</button>
-                                <a href="" class="btn btn-danger">Cancel</a>
+                                <a href="{{ route('products.index')  }}" class="btn btn-danger">Cancel</a>
                             </div>
                         </form>
                     </div>
